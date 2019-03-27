@@ -2,6 +2,8 @@ const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
 const app= express();
+const port = process.env.PORT || 4000;
+
 
 let dirdir=__dirname;
 console.log('dir '+dirdir);
@@ -47,6 +49,6 @@ app.get('/nba', (req,res)=>{
  });
 
 
-app.listen(4000, () => {
-  console.log('Server is up on port 4000')
+app.listen(port, () => {
+  console.log('Server is up on port '+ port)
 });
