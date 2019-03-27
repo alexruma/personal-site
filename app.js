@@ -2,7 +2,7 @@ const path = require('path');
 const express = require('express');
 const hbs = require('hbs');
 const app= express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 3000;
 
 
 let dirdir=__dirname;
