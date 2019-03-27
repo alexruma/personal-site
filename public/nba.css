@@ -1,0 +1,116 @@
+body{
+  background-image: url('https://hdwallsource.com/img/2014/7/nba-logo-wallpaper-41588-42564-hd-wallpapers.jpg');
+  background-size: 100%;
+  color:black;
+}
+
+#allInfo{
+  display:none;
+}
+
+#info{
+  font-weight:bold;
+  border: solid black;
+  border-radius: 4.5%;
+  width: 11em;
+
+  background-color: #C9082A;
+  font-family: 'Righteous', cursive;
+}
+#searchBar{
+  font-family: 'Righteous', cursive;
+  color:white;
+}
+#criteria-search{
+  font-family: 'Righteous', cursive;
+  color:white;
+}
+#copy{
+  float:right;
+}
+#logo{
+  height:4em;
+
+}
+#headline{
+  width:40%;
+  font-size:220%
+
+}
+#header{
+  overflow: auto;
+  display:inline;
+}
+#searchInput{
+  margin-top: 18px;
+}
+
+#headshot{
+  width:8%;
+  border: ridge black;
+  border-radius: 3%;
+  background: white;
+  display: inline;
+
+
+
+
+}
+#feet-input{
+  width: 3em;
+}
+#inches-input{
+  width: 3em;
+}
+
+#dropdown-content{
+  display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 0px 6px;
+    z-index: 1;
+
+  border-radius: 4.5%;
+  width: 11em;
+
+  background-color: white;
+  font-family: 'Righteous', cursive;
+  border:solid black;
+}
+#dropdown {
+    position: relative;
+  margin-top: .2em;
+  margin-left: 2.8em;
+    display: inline-block;
+  float:left;
+
+}
+.dropdown-result{
+  cursor: pointer;
+
+}
+.dropdown-result:hover {
+  background-color: rgb(252, 252, 133,.6)
+}
+#intro-popup{
+  border: solid black;
+  border-width: .9px;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.6);
+  border-radius: .5%;
+  overflow-y:auto;
+  background-color:gray;
+  width: 45%;
+  margin: auto;
+  position: absolute;
+  left:27.5%;
+  top:10%;
+  padding: 15px;
+  font-family: 'Hind', sans-serif;
+  font-size:14px;
+}
+#x-button{
+  float:right;
+ border-radius: 4px;
+}
