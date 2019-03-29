@@ -28,7 +28,7 @@ app.use(express.static(path.join(directory, '../public')));
 
 
 app.get('/', (req,res)=> {
-  res.render("index");
+  res.send("index");
 });
 
 
