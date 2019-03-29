@@ -5,15 +5,15 @@ const app= express();
 const port = process.env.PORT || 3000;
 
 
-let dirdir=__dirname;
-console.log('dir '+dirdir);
+let dir=__dirname;
 
-const directory =path.join(__dirname,'../personal-site/personal-site');
-const publicPath = path.join(directory, '../public');
-console.log(directory)
-const viewsPath = path.join(__dirname, '../template/views');
 
-const partialsPath = path.join(directory,'../template/partials')
+
+const publicPath = path.join(dir, '/public');
+console.log(publicPath)
+const viewsPath = path.join(dir, '/template/views');
+console.log(viewsPath)
+const partialsPath = path.join(dir,'/template/partials')
 
 //Setup handlebars engine
 app.set('view engine', 'hbs');
@@ -23,7 +23,7 @@ app.set('views',viewsPath);
 //Set partials path
 hbs.registerPartials(partialsPath)
 //Setup static directory to server
-app.use(express.static(path.join(directory, '../public')));
+app.use(express.static(path.join(dir, '/public')));
 
 
 
