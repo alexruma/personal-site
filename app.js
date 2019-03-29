@@ -11,7 +11,7 @@ console.log('dir '+dirdir);
 const directory =path.join(__dirname,'../personal-site/personal-site');
 const publicPath = path.join(directory, '../public');
 console.log(directory)
-const viewsPath = path.join(directory, '../template/views');
+const viewsPath = path.join(__dirname, '../template/views');
 
 const partialsPath = path.join(directory,'../template/partials')
 
@@ -28,7 +28,7 @@ app.use(express.static(path.join(directory, '../public')));
 
 
 app.get('/', (req,res)=> {
-  res.send("index");
+  res.render("index");
 });
 
 
