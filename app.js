@@ -28,10 +28,9 @@ app.use(express.static(path.join(directory, '../public')));
 
 
 app.get('/', (req,res)=> {
-  res.send("Alex's Homepage");
-})
-console.log(path.dirname('../public'))
-console.log(publicPath);
+  res.render("index");
+});
+
 
 
 app.get('/test', (req,res)=>{
@@ -47,7 +46,9 @@ app.get('/nba', (req,res)=>{
      name: "Alex"
    })
  });
-
+ app.get('*', (req,res) => {
+   res.render('404')
+ });
 
 app.listen(port, () => {
   console.log('Server is up on port '+ port)

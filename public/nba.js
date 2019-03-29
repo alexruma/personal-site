@@ -292,11 +292,11 @@ function suggestionSelect(choice){
 document.getElementById('nameSearch').addEventListener( 'input',function(){
 
   autoComplete(document.getElementById('nameSearch').value)})
-alert('running!')
+
 document.getElementById('x-button').addEventListener('click', function(){
   document.getElementById('intro-popup').style.display='none'
 });
-alert('running2!')
+
 document.addEventListener('click',function(){
 
   document.getElementById('dropdown-content').style.display='none';
